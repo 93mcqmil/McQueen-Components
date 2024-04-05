@@ -3,7 +3,7 @@ import "./Form.scss";
 const Form = () => {
   return (
     <>
-      <div className='form-container'>
+      <div className='Form-container'>
         <form action='' method='get' className='form-example'>
           <div className='form-example1'>
             <label htmlFor='name'></label>
