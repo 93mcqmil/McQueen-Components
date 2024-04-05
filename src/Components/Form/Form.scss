@@ -2,6 +2,7 @@
 
 .Form-container {
   border: 2px solid red;
+  border-top: none;
   width: 50%;
   padding: 5px;
   justify-content: center;
@@ -13,16 +14,22 @@
     padding: 7px;
   }
 }
-button {
+Button {
   font-size: larger;
   width: 100%;
   background-color: $button-background-color;
   color: $button-font-color;
   padding: 7px;
   border-radius: 7px;
+  margin-bottom: 10px;
+  border: none;
 
   &:hover {
-    opacity: 0.9;
     cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
   }
 }

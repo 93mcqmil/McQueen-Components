@@ -1,6 +1,18 @@
+import { useState } from "react";
 import "./Form.scss";
 
 const Form = () => {
+  const [buttonText, setButtonText] = useState("GET UPDATED");
+  const [buttonColor, setButtonColor] = useState("red");
+  const handleClick = () => {
+    if (buttonText === "GET UPDATED") {
+      setButtonText("YOU ARE UPDATED ✓");
+      setButtonColor("green");
+    } else {
+      setButtonText("GET UPDATED");
+      setButtonColor("red");
+    }
+  };
   return (
     <>
       <div className='Form-container'>
@@ -26,7 +38,9 @@ const Form = () => {
             />
           </div>
 
-          <button>GET UPDATED</button>
+          <button className='Button' onClick={handleClick}>
+            {buttonText}
+          </button>
         </form>
       </div>
     </>
