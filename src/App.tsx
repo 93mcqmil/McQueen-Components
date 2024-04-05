@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Form from "./Components/Form/Form";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <>
-      <div>
-        <h1></h1>
-      </div>
+      <Header />
+      <Form />
     </>
   );
 }

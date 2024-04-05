@@ -1,0 +1,20 @@
+@use "_fontStyle.scss" as *;
+
+.form-container {
+  border: 2px solid red;
+  width: 50%;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+}
+input {
+  font-size: larger;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 7px;
+}
+button {
+  font-size: larger;
+  width: 100%;
+  cursor: pointer;
+}
