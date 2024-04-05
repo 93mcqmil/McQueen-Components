@@ -1,5 +1,5 @@
-import "../sass/_form.scss";
-import "../sass/_fontStyle.scss";
+import "./Form.scss";
+
 const Form = () => {
   return (
     <>
@@ -22,7 +22,7 @@ const Form = () => {
               name='email'
               id='email'
               required
-              placeholder='Email'
+              placeholder='you@example.com'
             />
           </div>
 
