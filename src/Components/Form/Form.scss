@@ -1,9 +1,10 @@
 @use "../sass/fontStyle" as *;
 
 .Form-container {
-  border: 2px solid red;
+  background-color: #78bbff;
+  border-radius: 0 0 5px 5px;
   border-top: none;
-  width: 50%;
+  width: 40%;
   padding: 5px;
   justify-content: center;
   display: flex;
