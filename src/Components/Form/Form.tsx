@@ -5,9 +5,10 @@ const Form = () => {
   const [buttonText, setButtonText] = useState("GET UPDATED");
   const [buttonColor, setButtonColor] = useState("red");
   const handleClick = () => {
+    event?.preventDefault();
     if (buttonText === "GET UPDATED") {
       setButtonText("YOU ARE UPDATED ✓");
-      setButtonColor("green");
+      setButtonColor("Green");
     } else {
       setButtonText("GET UPDATED");
       setButtonColor("red");
@@ -38,7 +39,11 @@ const Form = () => {
             />
           </div>
 
-          <button className='Button' onClick={handleClick}>
+          <button
+            className='Button'
+            onClick={handleClick}
+            style={{ backgroundColor: buttonColor }}
+          >
             {buttonText}
           </button>
         </form>
