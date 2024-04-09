@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Form.scss";
+import Button from "../Button/Button";
 
 const Form = () => {
   const [buttonText, setButtonText] = useState("GET UPDATED");
@@ -39,13 +40,18 @@ const Form = () => {
             />
           </div>
 
-          <button
-            className='Button'
+          <Button
+            onClick={handleClick}
+            text={buttonText}
+            className='Subscribe-button'
+          />
+          {/* <button
+            className='Subscribe-button'
             onClick={handleClick}
             style={{ backgroundColor: buttonColor }}
           >
             {buttonText}
-          </button>
+          </button> */}
         </form>
       </div>
     </>

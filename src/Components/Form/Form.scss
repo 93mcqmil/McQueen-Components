@@ -15,11 +15,11 @@
     padding: 7px;
   }
 }
-Button {
+.Subscribe-button {
   font-size: larger;
   width: 100%;
-  // background-color: $button-background-color;
   color: $button-font-color;
+  background-color: $button-background-color;
   padding: 7px;
   border-radius: 7px;
   margin-bottom: 10px;
@@ -32,5 +32,6 @@ Button {
   &:active {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
+    background-color: $button-updated-green;
   }
 }

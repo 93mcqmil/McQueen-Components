@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <Form />
-      <ProgressBar title="Progress" percentage={75} color={"green"} />
+      <ProgressBar title='Progress' percentage={75} color={"green"} />
     </>
   );
 }
