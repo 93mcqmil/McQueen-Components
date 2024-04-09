@@ -5,3 +5,5 @@ Jag har valt och göra en formulär som består av 3 komponenter,
 <u>Installation</u>
 * npm install
 * npm run dev
+
+Lagt till check-box-lista med namn
