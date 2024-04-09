@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./Form.scss";
+import Button from "../Button/Button";
 
 const Form = () => {
   const [buttonText, setButtonText] = useState("GET UPDATED");
-  const [buttonColor, setButtonColor] = useState("red");
+  const [buttonClicked, setButtonClicked] = useState(false);
   const handleClick = () => {
     event?.preventDefault();
     if (buttonText === "GET UPDATED") {
       setButtonText("YOU ARE UPDATED ✓");
-      setButtonColor("Green");
+      setButtonClicked(true);
     } else {
       setButtonText("GET UPDATED");
-      setButtonColor("red");
+      setButtonClicked(false);
     }
   };
   return (
@@ -39,14 +40,13 @@ const Form = () => {
             />
           </div>
 
-          <button
-            className='Button'
+          <Button
             onClick={handleClick}
-            style={{ backgroundColor: buttonColor }}
-          >
-            {buttonText}
-          </button>
+            text={buttonText}
+            className={`Subscribe-button ${buttonClicked ? "clicked" : ""}`}
+          />
         </form>
+        <div></div>
       </div>
     </>
   );
