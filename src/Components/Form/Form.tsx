@@ -46,7 +46,6 @@ const Form = () => {
             className={`Subscribe-button ${buttonClicked ? "clicked" : ""}`}
           />
         </form>
-        <div></div>
       </div>
     </>
   );
