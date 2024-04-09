@@ -7,12 +7,12 @@ type CheckProps = {
 
 const Checkbox = ({ title, big }: CheckProps) => {
   return (
-    <section className="checkbox">
+    <section className='checkbox'>
       <label
-        htmlFor="check"
+        htmlFor='check'
         className={big ? "big checkbox__label" : "checkbox__label"}
       >
-        <input type="checkbox" name="checkbox" />
+        <input type='checkbox' name='checkbox' />
         {title}
       </label>
     </section>
