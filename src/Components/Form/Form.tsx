@@ -4,15 +4,15 @@ import Button from "../Button/Button";
 
 const Form = () => {
   const [buttonText, setButtonText] = useState("GET UPDATED");
-  const [buttonColor, setButtonColor] = useState("red");
+  const [buttonClicked, setButtonClicked] = useState(false);
   const handleClick = () => {
     event?.preventDefault();
     if (buttonText === "GET UPDATED") {
       setButtonText("YOU ARE UPDATED ✓");
-      setButtonColor("Green");
+      setButtonClicked(true);
     } else {
       setButtonText("GET UPDATED");
-      setButtonColor("red");
+      setButtonClicked(false);
     }
   };
   return (
@@ -43,15 +43,8 @@ const Form = () => {
           <Button
             onClick={handleClick}
             text={buttonText}
-            className='Subscribe-button'
+            className={`Subscribe-button ${buttonClicked ? "clicked" : ""}`}
           />
-          {/* <button
-            className='Subscribe-button'
-            onClick={handleClick}
-            style={{ backgroundColor: buttonColor }}
-          >
-            {buttonText}
-          </button> */}
         </form>
       </div>
     </>
