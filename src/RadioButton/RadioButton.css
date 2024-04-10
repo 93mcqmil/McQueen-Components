@@ -1,0 +1,14 @@
+.Radiobuttons label {
+    justify-content: center;
+    font-size: x-large;
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+input[type="radio"] {
+    transform: scale(2);
+
+
+
+}

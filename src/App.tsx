@@ -4,6 +4,7 @@ import Checkbox from "./Components/Checkbox/Checkbox";
 import Form from "./Components/Form/Form";
 import Header from "./Components/Header/Header";
 import ProgressBar from "./Components/ProgressBar/ProgressBar";
+import RadioButton from "./RadioButton/RadioButton";
 
 const names = [
   "Alice",
@@ -24,7 +25,7 @@ const names = [
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Form />
 
       <ProgressBar title='Progress' percentage={75} color={"green"} />
@@ -37,8 +38,8 @@ function App() {
       <ProgressBar title="Progress" percentage={75} color={"green"} />
 
       <Carousel obj={myObj} />
-
-
+ */}
+      <RadioButton />
     </>
   );
 }
