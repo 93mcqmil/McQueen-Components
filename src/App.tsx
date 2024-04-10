@@ -1,3 +1,5 @@
+import Carousel from "./Components/Carousel/Carousel";
+import { myObj } from "./Components/Carousel/carouselTypes";
 import Checkbox from "./Components/Checkbox/Checkbox";
 import Form from "./Components/Form/Form";
 import Header from "./Components/Header/Header";
@@ -30,6 +32,13 @@ function App() {
       {names.map((name, index) => (
         <Checkbox key={index} title={name} big={false} />
       ))}
+
+
+      <ProgressBar title="Progress" percentage={75} color={"green"} />
+
+      <Carousel obj={myObj} />
+
+
     </>
   );
 }
