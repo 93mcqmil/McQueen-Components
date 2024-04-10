@@ -1,13 +1,21 @@
+.Radiobuttons {
+    border: 2px dotted black;
+    padding: 2rem;
+}
+
 .Radiobuttons label {
-    justify-content: center;
     font-size: x-large;
     display: flex;
     margin-top: 1rem;
+
+
 
 }
 
 input[type="radio"] {
     transform: scale(2);
+    margin-right: 25px;
+
 
 
 
