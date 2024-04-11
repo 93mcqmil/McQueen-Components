@@ -1,3 +1,4 @@
+import Box from "./Components/Box/Box";
 import Carousel from "./Components/Carousel/Carousel";
 import { myObj } from "./Components/Carousel/carouselTypes";
 import Checkbox from "./Components/Checkbox/Checkbox";
@@ -40,6 +41,7 @@ function App() {
       <Carousel obj={myObj} />
  */}
       <RadioButton />
+      <Box />
     </>
   );
 }
