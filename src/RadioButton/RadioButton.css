@@ -1,6 +1,14 @@
 .Radiobuttons {
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     padding: 2rem;
+    /* width: 25%; */
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    margin-top: 12rem;
+
+
+
 }
 
 .Radiobuttons label {
@@ -9,12 +17,41 @@
     margin-top: 1rem;
 
 
+}
+
+.Radiobuttons label:hover {
+    font-size: x-large;
+    font-weight: bolder;
+
 
 }
+
+.label1:hover {
+    background-color: rgb(251, 17, 17);
+}
+
+.label2:hover {
+    background-color: rgb(138, 244, 8);
+}
+
+.label3:hover {
+    background-color: rgb(5, 248, 191);
+}
+
+.label4:hover {
+    background-color: rgb(29, 5, 243);
+}
+
+.label5:hover {
+    background-color: rgb(250, 242, 7);
+}
+
 
 input[type="radio"] {
     transform: scale(2);
     margin-right: 25px;
+    cursor: pointer;
+
 
 
 
