@@ -4,6 +4,7 @@ import { myObj } from "./Components/Carousel/carouselTypes";
 import Checkbox from "./Components/Checkbox/Checkbox";
 import Form from "./Components/Form/Form";
 import Header from "./Components/Header/Header";
+import MixComponent from "./Components/MixComponent/MixComponent";
 import ProgressBar from "./Components/ProgressBar/ProgressBar";
 import RadioButton from "./RadioButton/RadioButton";
 
@@ -42,6 +43,7 @@ function App() {
  */}
       <RadioButton />
       <Box />
+      <MixComponent />
     </>
   );
 }
