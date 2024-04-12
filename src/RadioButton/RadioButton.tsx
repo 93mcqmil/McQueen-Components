@@ -1,63 +1,51 @@
 import { useState } from "react";
 import "./RadioButton.css";
+import RadioButtonProps from "./RadioButtonProps";
 
-const RadioButton = () => {
-  // const [checked, setChecked] = useState(false);
-  // //
-  // const handleClick = () => {
-  //   if (checked === true) {
-  //     setChecked(checked);
-  //     console.log("the button is now checked:", checked);
-  //   } else {
-  //     setChecked(!checked);
-  //     console.log("Its now unchecked:", checked);
-  //   }
-  // };
+const RadioButton: React.FC<RadioButtonProps> = ({
+  label,
+  onClick,
+  className,
+}) => {
+  const [checked, setChecked] = useState(true);
 
-  // const [condition, setCondition] = useState(true);
-
-  // const handleMouseOVer = () => {
-  //   if (condition === true) {
-  //     setCondition(true);
-  //   } else {
-  //     setCondition(!true);
-  //   }
-  // };
+  const handleClick = () => {
+    if (checked === true) {
+      setChecked(checked);
+      console.log("the button is now checked:", checked);
+    } else {
+      setChecked(!checked);
+      console.log("Its now unchecked:", checked);
+    }
+  };
 
   return (
-    <form action='radiobuttons' className='Radiobuttons'>
-      <label htmlFor='Engelska' className='label1'>
-        <input
-          type='radio'
-          id='språk'
-          name='Engelska' /*onClick={handleClick} */
-          // onMouseOver={handleMouseOVer}
-          // style={{ background: condition ? "yellow" : "none" }}
-        />
+    <div className='RadioButtons'>
+      <label htmlFor='radio-button1' className='label1'>
+        <input type='radio' id='språk' name='Engelska' onClick={handleClick} />
         Engelska
-        <img src='' alt='' />
       </label>
 
-      <label htmlFor='Tyska' className='label2'>
+      <label htmlFor='radio-button2' className='label2'>
         <input type='radio' id='språk' name='Engelska' />
         Tyska
       </label>
 
-      <label htmlFor='Svenska' className='label3'>
+      <label htmlFor='radio-button3' className='label3'>
         <input type='radio' id='språk' name='Engelska' />
         Svenska
       </label>
 
-      <label htmlFor='Norska' className='label4'>
+      <label htmlFor='radio-button4' className='label4'>
         <input type='radio' id='språk' name='Engelska' />
         Norska
       </label>
 
-      <label htmlFor='Franska' className='label5'>
+      <label htmlFor='radio-button5' className='label5'>
         <input type='radio' id='språk' name='Engelska' />
         Franska
       </label>
-    </form>
+    </div>
   );
 };
 export default RadioButton;

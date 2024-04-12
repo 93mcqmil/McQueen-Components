@@ -1,4 +1,4 @@
-.Radiobuttons {
+.RadioButtons {
     /* border: 2px dotted black; */
     padding: 2rem;
     /* width: 25%; */
@@ -11,7 +11,7 @@
 
 }
 
-.Radiobuttons label {
+.RadioButtons label {
     font-size: x-large;
     display: flex;
     margin-top: 1rem;
@@ -19,7 +19,7 @@
 
 }
 
-.Radiobuttons label:hover {
+.RadioButtons label:hover {
     font-size: x-large;
     font-weight: bolder;
 
