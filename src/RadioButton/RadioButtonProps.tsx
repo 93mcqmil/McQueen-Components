@@ -1,6 +1,4 @@
-interface RadioButtonProps {
-  label: string;
-  onClick: () => void;
-  className: string;
-}
+const RadioButtonProps = () => {
+  return <></>;
+};
 export default RadioButtonProps;
